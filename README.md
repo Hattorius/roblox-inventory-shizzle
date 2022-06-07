@@ -1,5 +1,6 @@
 # Roblox accepted trade checker with discord webhook because I wanted to create this because of boredom. 
 ✨ and it just works ✨
+
 ![ur nan](https://i.imgur.com/GtvSrhF.png)
 
 ## Features
@@ -18,8 +19,7 @@ py -3 -m pip install -r requirements.txt
 # or whatever Windows uses, literally every user has their own way to do Python for some reason
 ```
 
-Put your .ROBLOSECURITY cookie in cookie.txt
-Put your Discord webhook in webhook.txt
+Put your .ROBLOSECURITY cookie in cookie.txt<br>Put your Discord webhook in webhook.txt
 
 Start program:
 ```
