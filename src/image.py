@@ -73,12 +73,10 @@ def putLimitedsInTradeScreen(sent=[], received=[], sentTotal=5, receivedTotal=10
     text = humanize.intcomma(diff)
     if diff > 0:
         text = "+" + text
-    elif diff < 0:
-        text = "-" + text
     w, h = font.getsize(text)
     w += 40
     draw.rectangle((middle - w/2, 330, middle - w/2 + w, 330 + h), fill='#232527')
 
     draw.text((middle - w/2 + 20, 330), humanize.intcomma(text), (255,255,255), font=font)
 
-    trade.show()
+    return trade
