@@ -21,7 +21,7 @@ def createImage(received=[], sent=[]):
     for id in received:
         item = rolimons[str(id)]
         limitedImage = requests.get(item[-1])
-        with open('limiteds/' + str(id) + '.png', 'wb') as f:
+        with open('limiteds/' + str(id) + '.png', 'wb+') as f:
             f.write(limitedImage.content)
         receivedImages.append(image.importLimited(str(id), item[8], item[0], item[16], item[19]))
         receivedRapTotal += item[8]
@@ -33,7 +33,7 @@ def createImage(received=[], sent=[]):
     for id in sent:
         item = rolimons[str(id)]
         limitedImage = requests.get(item[-1])
-        with open('limiteds/' + str(id) + '.png', 'wb') as f:
+        with open('limiteds/' + str(id) + '.png', 'wb+') as f:
             f.write(limitedImage.content)
         sentImages.append(image.importLimited(str(id), item[8], item[0], item[16], item[19]))
         sentRapTotal += item[8]
