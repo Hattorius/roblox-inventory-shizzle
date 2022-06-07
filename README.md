@@ -7,6 +7,8 @@
 * Waits for inventory to change using inventory api's (so doesn't involve in trade ratelimits)
 * When inventory changes tries to get trade from trade api (if ratelimited, try again 5 seconds later)
 * Creates a real looking picture as if you got a trade :0
+* Checks if projected using Rolimon's
+* Gets value of the items from Rolimon's
 
 ## How to install
 Install the dependencies:
