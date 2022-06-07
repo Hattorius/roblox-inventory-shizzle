@@ -89,7 +89,7 @@ def getTrades():
     newTrades = []
     for trade in trades['data']:
         secondsAgo = time.time() - (datetime.strptime(trade['created'], "%Y-%m-%dT%H:%M:%S.%fZ") - datetime(1970, 1, 1)).total_seconds()
-        if secondsAgo < 55000:
+        if secondsAgo < 320:
             newTrades.append(getTrade(trade['id']))
     return newTrades
 
