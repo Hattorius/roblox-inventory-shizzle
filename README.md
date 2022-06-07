@@ -30,6 +30,7 @@ python3 start.py
 py -3 start.py
 # or whatever again
 ```
+quick side note: this hasn't been tested
 
 ## License
 This project is licensed under the GNU GPLv3 License - see the [LICENSE](LICENSE) file for details.
